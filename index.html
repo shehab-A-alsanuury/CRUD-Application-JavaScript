@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>.....</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input, button {
+            margin: 5px;
+            padding: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+        }
+        .delete {
+            background-color: #ff4136;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .edit {
+            background-color: #ffdc00;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        #addBtn {
+            background-color: #2ecc40;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CRUD Application With Local Storage</h1>
+    <div>
+        <input type="text" id="nameInput" placeholder="Enter Name">
+        <input type="text" id="ageInput" placeholder="Enter Age">
+        <input type="text" id="addressInput" placeholder="Enter Address">
+        <input type="text" id="emailInput" placeholder="Enter Email">
+        <button id="addBtn" onclick="addData()">Add Data</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
